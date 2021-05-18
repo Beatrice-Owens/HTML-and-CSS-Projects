@@ -1,0 +1,17 @@
+/*----------------------
+AUTHOR: BEATRICE OWENS
+
+------------------------
+GENERIC STYLES
+----------------------*/
+html {
+    font-family: sans-serif;
+    font-size: 62.5%;
+}
+
+.reservation input[type="text"] {
+    width: 80%;
+    margin: 10px 1em;
+    border: 2px solid black;
+    border-radius: 7px;
+}
