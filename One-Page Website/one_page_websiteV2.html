@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <title>Momo's Cat Cafe</title>
+        <link rel="stylesheet" href="./css/one_page_website.css">
+        <script src="./JS/one_page_website.js" defer></script>
+    </head>
+    <body>
+
+        <!-- NAV -->
+		<div class="wrap">
+			<div class="menu-container">
+				<ul class="menu">
+					<a href="#home"><li>HOME</li></a>
+					<a href="#gallery"><li>GALLERY</li></a>
+					<a href="#contact"><li>RESERVATIONS</li></a>
+				</ul>
+			</div>
+		</div>
+		<!-- End NAV -->
+
+        <!-- HOME -->
+		<div id="home">
+			<div class="container">
+				<div class="text-center">
+					<span class="head-main">Momo's Cat Cafe</span>
+				</div>
+			</div>
+		</div>
+		<!-- END HOME -->
+
+        <section id="gallery">
+            <div class="container">
+                <!--Images used to open the lightbox-->
+                <div class="row">
+                    <div class="column">
+                        <img src="./images/thumb/thumb_1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                        <p>You're formally invited to Momo's Cat Cafe!</p>
+                    </div>
+                    <div class="column">
+                        <img src="./images/thumb/thumb_2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                        <p>Stop in and stay a while.</p>
+                    </div>
+                    <div class="column">
+                        <img src="./images/thumb/thumb_3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                        <p>Furry friends await you.</p>
+                    </div>
+                    <div class="column">
+                        <img src="./images/thumb/thumb_4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                        <p>We love getting our pets.</p>
+                    </div>
+                    <div class="column">
+                        <img src="./images/thumb/thumb_5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+                        <p>We can't wait for you to get here.</p>
+                    </div>
+                    <div class="column">
+                        <img src="./images/thumb/thumb_6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+                        <p>Serving the tastiest treats.</p>
+                    </div>
+                    <div class="column">
+                        <img src="./images/thumb/thumb_7.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+                        <p>Laze about with our fluffy friends.</p>
+                    </div>
+                    <div class="column">
+                        <img src="./images/thumb/thumb_8.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+                        <p>We're always COVID-safe.</p>
+                    </div>
+                    <div class="column">
+                        <img src="./images/thumb/thumb_9.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow">
+                        <p>Make a reservation and tuck yourself in today!</p>
+                    </div>
+                </div>
+
+                <!--Modal/Lightbox-->
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+
+                        <div class="mySlides">
+                            <div class="numbertext">1/9</div>
+                            <img src="./images/thumb/thumbnail_1.jpg" style="width: 100%;">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">2/9</div>
+                            <img src="./images/thumb/thumbnail_2.jpg" style="width: 100%;">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">3/9</div>
+                            <img src="./images/thumb/thumbnail_3.jpg" style="width: 100%;">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">4/9</div>
+                            <img src="./images/thumb/thumbnail_4.jpg" style="width: 100%;">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">5/9</div>
+                            <img src="./images/thumb/thumbnail_5.jpg" style="width: 100%;">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">6/9</div>
+                            <img src="./images/thumb/thumbnail_6.jpg" style="width: 100%;">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">7/9</div>
+                            <img src="./images/thumb/thumbnail_7.jpg" style="width: 100%;">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">8/9</div>
+                            <img src="./images/thumb/thumbnail_8.jpg" style="width: 100%;">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">9/9</div>
+                            <img src="./images/thumb/thumbnail_9.jpg" style="width: 100%;">
+                        </div>
+
+                        <!--Next/Previous Controls-->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                        <!--Caption Text-->
+                        <div class="caption-container">
+                            <p id="caption"></p>
+                        </div>
+
+                        <!--Thumbnail image controls-->
+                        <div class="column">
+                            <img class="demo" src="./images/thumb/thumb_1.jpg" onclick="currentSlide(1)" alt="Bowtie Kitten">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="./images/thumb/thumb_2.jpg" onclick="currentSlide(2)" alt="Upside Down Cat">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="./images/thumb/thumb_3.jpg" onclick="currentSlide(3)" alt="Furry Friends">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="./images/thumb/thumb_4.jpg" onclick="currentSlide(4)" alt="Cat Petting">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="./images/thumb/thumb_5.jpg" onclick="currentSlide(5)" alt="Box Kitty">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="./images/thumb/thumb_6.jpg" onclick="currentSlide(6)" alt="Sushi Kitty">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="./images/thumb/thumb_7.jpg" onclick="currentSlide(7)" alt="Lazy Cat">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="./images/thumb/thumb_8.jpg" onclick="currentSlide(8)" alt="Kitty Face-mask">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="./images/thumb/thumb_9.jpg" onclick="currentSlide(9)" alt="Peeking Kitten">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIDEO -->
+		<div>
+			<div>
+				<h2>What is a cat cafe?</h2>
+				<div>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/lFuUrgtlYN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+		<!--END VIDEO -->
+
+        <!-- RSVP -->
+		<section id="contact">
+			<div class="container">
+				<div class="heading-padding">
+					<h1 class="heading-padding">Reservations</h1>
+					<div class="reservation">
+						<h2><span>Cuddly comfort is just a phone call away.</span>
+							<br />Reserve your seat today!
+						</h2>
+						<p class ="rsvp-text">
+							Please provide your contact information.
+						</p>
+						<div class="form-rsvp">
+							<form action="" method="post">
+								<input class="rsvp" type="text" value="" placeholder="First Name">
+								<input class="rsvp" type="text" value="" placeholder="Last Name">
+								<input class="rsvp" type="text" value="" placeholder="Email Address">
+								<input class="rsvp" type="text" value="" placeholder="Phone Number">
+								<div class="form-spacer">
+									<label class="terms">Terms and Conditions</label>
+								</div>
+								<div class="submit">
+									<input type="submit" value="Submit">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END RSVP -->
+
+        <!-- Footer -->
+		<div id="footer">
+			www.momoscat.cafe &nbsp;|&nbsp; &copy; 2021
+		</div>
+		<!-- END FOOTER -->
+
+    </body>
+</html>
